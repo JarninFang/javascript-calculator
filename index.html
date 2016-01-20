@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
@@ -12,34 +11,37 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<script src="javascript/calculator.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Javascript Calculator</title>
 </head>
 <body>
-	<p id="number-screen"></p>
+	<div id="number-screen"></div>
+	<div class="keys">
+		<div class="row text-center" >
+			<button id="nine-btn" class="btn btn-secondary calc-button number" type="button">9</button>
+			<button id="eight-btn" class="btn btn-secondary calc-button number" type="button">8</button>
+			<button id="seven-btn" class="btn btn-secondary calc-button number" type="button">7</button>
+			<button id="plus-btn" class="btn btn-secondary calc-button operator" type="button">+</button>
+			<button id="divide-btn" class="btn btn-secondary calc-button operator" type="button">/</button>
+		</div>
+		<div class="row text-center">
+			<button id="six-btn" class="btn btn-secondary calc-button number" type="button">6</button>
+			<button id="five-btn" class="btn btn-secondary calc-button number" type="button">5</button>
+			<button id="four-btn" class="btn btn-secondary calc-button number" type="button">4</button>
+			<button id="minus-btn" class="btn btn-secondary calc-button operator" type="button">-</button>
+			<button id="equals-btn" class="btn btn-secondary calc-button evaluate" type="button">=</button>
+		</div>
 
-	<div class="row text-center" >
-		<button id="nine-btn" class="btn btn-secondary calc-button" type="button">9</button>
-		<button id="eight-btn" class="btn btn-secondary calc-button" type="button">8</button>
-		<button id="seven-btn" class="btn btn-secondary calc-button" type="button">7</button>
-		<button id="plus-btn" class="btn btn-secondary calc-button" type="button">+</button>
-		<button id="divide-btn" class="btn btn-secondary calc-button" type="button">/</button>
+		<div class="row text-center">
+			<button id="three-btn" class="btn btn-secondary calc-button number" type="button">3</button>
+			<button id="two-btn" class="btn btn-secondary calc-button number" type="button">2</button>
+			<button id="one-btn" class="btn btn-secondary calc-button number" type="button">1</button>
+			<button id="multiply-btn" class="btn btn-secondary calc-button operator" type="button">*</button>
+			<button id="clear-btn" class="btn btn-secondary calc-button clear" type="button">C</button>
+		</div>
 	</div>
-	<div class="row text-center">
-		<button id="six-btn" class="btn btn-secondary calc-button" type="button">6</button>
-		<button id="five-btn" class="btn btn-secondary calc-button" type="button">5</button>
-		<button id="four-btn" class="btn btn-secondary calc-button" type="button">4</button>
-		<button id="minus-btn" class="btn btn-secondary calc-button" type="button">-</button>
-		<button id="equals-btn" class="btn btn-secondary calc-button" type="button">=</button>
-	</div>
-
-	<div class="row text-center">
-		<button id="three-btn" class="btn btn-secondary calc-button" type="button">3</button>
-		<button id="two-btn" class="btn btn-secondary calc-button" type="button">2</button>
-		<button id="one-btn" class="btn btn-secondary calc-button" type="button">1</button>
-		<button id="multiply-btn" class="btn btn-secondary calc-button" type="button">*</button>
-	</div>
-
 </body>
 </html>

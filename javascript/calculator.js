@@ -14,13 +14,33 @@ $("document").ready(function() {
 	$("#minus-btn").click(function() { appendNumber("-"); });
 	$("#multiply-btn").click(function() { appendNumber("*"); });
 	$("#divide-btn").click(function() { appendNumber("/"); });
-	$("#equals-btn").click(function() { appendNumber("="); });
-
+	$("#equals-btn").click(function() { evaluate(); });
+	$("#clear-btn").click(function() { clear(); });
 });
 
-function appendNumber(operand) {
+function appendNumber(number) {
+	var oldString = $("#number-screen").text();
+	$("#number-screen").text(oldString + number);
+	arrayOfOperands.push(number);
+	console.log(arrayOfOperands);
+}
+
+function appendOperand(operand) {
 	var oldString = $("#number-screen").text();
 	$("#number-screen").text(oldString + operand);
 	arrayOfOperands.push(operand);
 	console.log(arrayOfOperands);
+}
+
+function evaluate() {
+	var equationString = arrayOfOperands.join("");
+	var result = eval(equationString);
+	console.log("result = " + result);
+	$("#number-screen").text(result);
+	arrayOfOperands = [result];
+}
+
+function clear() {
+	arrayOfOperands = [];
+	$("#number-screen").text("");
 }

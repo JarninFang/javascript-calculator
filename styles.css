@@ -1,3 +1,13 @@
+* {
+	font-size: 1em; 	
+}
 .calc-button {
 	margin: .25em;
+}
+
+#number-screen {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: 'Oswald', sans-serif;
 }
